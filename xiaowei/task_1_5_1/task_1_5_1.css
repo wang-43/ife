@@ -7,6 +7,7 @@ body {
 	font-size: 15px;
 	font-family: "Microsoft Yahei";
 	background-color:#C9CABB;
+	min-width: 750px;
 }
 
 img {
@@ -17,7 +18,7 @@ header {
 	background-color: #333333;
 	position: relative;
 	color: white;
-	
+	width: 100%;
 }
 
 header h1 {
@@ -44,9 +45,13 @@ nav ul li a {
 }
 
 /* main */
+
+main article {
+	margin: 20px 430px 20px 20px;
+}
+
 article,aside {
 	border: 1px solid gray;
-	margin: 20px;
 	padding: 20px;
 	background-color: white;
 	box-shadow: 1px 1px 1px;
@@ -75,12 +80,16 @@ article ul {
 	margin: 10px 2em;
 }
 
+article img{
+	width: 40%;
+}
+
 figure {
 	width: 200px;
 	height: 200px;
 	border: 1px solid gray;
-	margin: 30px 50px;
-	
+	margin: 30px 30px;
+	display: inline-block;
 }
 
 figure img {
@@ -119,9 +128,18 @@ article table .total {
 }
 
 /* aside */
+
+aside {
+	float: right;
+	width: 350px;
+	margin-right: 20px;
+	margin-top: 20px;
+}
+
 aside h2 {
 	border-left: 2px solid gray;
-	text-indent: 10px
+	text-indent: 10px;
+	font-size: 1.1em;
 }
 
 aside form div {
@@ -131,19 +149,24 @@ aside form div {
 aside form div .asidetext{
 	float: left;
 	text-align: right;
-	width: 40%;
-	margin-right: 15px;
-
+	width: 30%;
+	margin-right: 5%;
+	font-size: 0.8em;
 }
 
 aside form div p {
-	margin-left: 40%;
+	margin-left: 31%;
 	padding-left: 15px;
 	color: gray;
 	font-size: 12px;
 	margin-bottom: 5px;
 	margin-top: 5px;
 
+}
+
+aside form div textarea {
+	height: 100%;
+	width: 50%;
 }
 
 aside form button {
@@ -165,4 +188,5 @@ footer {
 	color: white;
 	height: 60px;
 	line-height: 60px;
+	width: 100%;
 }
